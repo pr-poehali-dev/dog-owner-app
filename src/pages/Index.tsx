@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import { Link } from "react-router-dom";
 
 const features = [
   {
@@ -225,10 +226,12 @@ const Index = () => {
           <p className="text-muted-foreground mb-8">
             Присоединяйтесь к сообществу заботливых хозяев
           </p>
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2">
-            <Icon name="PawPrint" size={20} />
-            Создать профиль питомца
-          </Button>
+          <Link to="/pet">
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2">
+              <Icon name="PawPrint" size={20} />
+              Создать профиль питомца
+            </Button>
+          </Link>
         </div>
       </section>
 
